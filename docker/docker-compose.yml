@@ -1,0 +1,37 @@
+version: '3'
+
+services:
+  postgres:
+    image: postgres:latest
+    container_name: subscriberbc-postgres
+    environment:
+      POSTGRES_DB: subscriberbc
+      POSTGRES_USER: subscriberbc_user
+      POSTGRES_PASSWORD: subscriberbc_password
+    ports:
+      - "5432:5432"
+    networks:
+      - subscriberbc-network
+  subscriberbc-app:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    image: canalplus/subscriber-bc:latest
+    container_name: subscriberbc-app
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/subscriberbc
+      SPRING_DATASOURCE_USERNAME: subscriberbc_user
+      SPRING_DATASOURCE_PASSWORD: subscriberbc_password
+      SPRING_JPA_HIBERNATE_DDL_AUTO: update
+      SPRING_DATASOURCE_DRIVER_CLASS_NAME : org.postgresql.Driver
+
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+    networks:
+      - subscriberbc-network
+
+networks:
+  subscriberbc-network:
+    driver: bridge

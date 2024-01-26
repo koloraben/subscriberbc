@@ -1,0 +1,6 @@
+id;first_name;last_name;mail;phone;is_active
+a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11;chris;elinor;chris@gmail.com;+33758914602;true
+a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a12;sidhar;avaya;sidhar@gmail.com;+33998674602;true
+a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a13;aya;binoma;aya@gmail.com;+33758674662;true
+a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a14;sozan;loic;sozan@gmail.com;33754474602;true
+a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a15;yann;lamotte;yann@gmail.com;+33758688602;false
