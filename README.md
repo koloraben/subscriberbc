@@ -4,7 +4,7 @@
 
 ## Overview
 
-Crud Operation on subscriber at canalplus
+Crud Operation on subscriber at chouchou
 
 ## Project Structure
 
@@ -17,7 +17,7 @@ project-root/
 │   ├── main/
 │   │   ├── java/
 │   │   │   ├── com/
-│   │   │   │   ├── canalplus/
+│   │   │   │   ├── chouchou/
 │   │   │   │   │   ├── subscriberbc/
 │   │   │   │   │   │   ├── domain/
 │   │   │   │   │   │   │   ├── business/
@@ -51,7 +51,7 @@ project-root/
 │   ├── test/
 │   │   ├── java/
 │   │   │   ├── com/
-│   │   │   │   ├── canalplus/subscriberbc
+│   │   │   │   ├── chouchou/subscriberbc
 
 │   │   │   │   │  │   │   │   │   ├── domain
 │   │   │   │   │  │   │   │   │   ├── integrationtest
